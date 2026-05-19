@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImaginaDev LLC — Mobile App Studio</title>
+  <meta name="description" content="ImaginaDev LLC is a digital product studio building intelligent, beautifully designed software. Products include Tripmory, Destiq, and Vidscape." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cyan:    #29abe2;
+      --cyan-lt: #7dd4f0;
+      --navy:    #0a1628;
+      --navy-md: #0f1f3d;
+      --navy-lt: #162847;
+      --gray:    #b0b8c8;
+      --gray-dk: #4a5568;
+      --white:   #f0f4fa;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── grid texture ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(41,171,226,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(41,171,226,.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── glow orb ── */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -20vh;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80vw;
+      height: 60vh;
+      background: radial-gradient(ellipse, rgba(41,171,226,.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─────────────── NAV ─────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(10,22,40,.7);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(41,171,226,.12);
+    }
+
+    .nav-logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: .04em;
+    }
+    .nav-logo span { color: var(--cyan); }
+
+    nav a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem;
+      color: var(--gray);
+      text-decoration: none;
+      letter-spacing: .08em;
+      transition: color .2s;
+    }
+    nav a:hover { color: var(--cyan); }
+
+    .nav-links { display: flex; gap: 2rem; }
+
+    /* ─────────────── HERO ─────────────── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+    }
+
+    .hero-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem;
+      color: var(--cyan);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp .6s ease forwards .2s;
+    }
+
+    .hero-mark {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      letter-spacing: -.02em;
+      margin-bottom: .5rem;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards .35s;
+    }
+
+    .hero-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: .06em;
+      margin-bottom: .4rem;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards .5s;
+    }
+    .hero-name .i, .hero-name .d { color: var(--cyan); }
+    .hero-name .rest { color: var(--gray); }
+
+    .hero-llc {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .85rem;
+      color: var(--gray);
+      letter-spacing: .28em;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards .6s;
+    }
+
+    .divider {
+      width: 280px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      margin: 0 auto 2.5rem;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards .7s;
+    }
+
+    .hero-tagline {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .9rem;
+      color: var(--gray);
+      letter-spacing: .06em;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards .8s;
+    }
+    .hero-tagline .comment { color: var(--cyan-lt); opacity: .6; }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 480px;
+      line-height: 1.75;
+      margin: 0 auto 3rem;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards .9s;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .8rem 2rem;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .8rem;
+      letter-spacing: .1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background .25s, color .25s;
+      opacity: 0;
+      animation: fadeUp .7s ease forwards 1s;
+    }
+    .hero-cta:hover { background: var(--cyan); color: var(--navy); }
+
+    /* ─────────────── PRODUCTS ─────────────── */
+    #products {
+      position: relative;
+      z-index: 1;
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem;
+      color: var(--cyan);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 500px;
+      line-height: 1.7;
+      margin-bottom: 4rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--navy-md);
+      border: 1px solid rgba(41,171,226,.15);
+      padding: 2rem;
+      position: relative;
+      transition: border-color .3s, transform .3s;
+      overflow: hidden;
+    }
+    .product-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .product-card:hover {
+      border-color: rgba(41,171,226,.4);
+      transform: translateY(-4px);
+    }
+    .product-card:hover::before { opacity: 1; }
+
+    .product-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem;
+      color: var(--cyan);
+      opacity: .5;
+      letter-spacing: .1em;
+      margin-bottom: 1.2rem;
+    }
+
+    .product-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: .5rem;
+      letter-spacing: -.01em;
+    }
+    .product-name span { color: var(--cyan); }
+
+    .product-type {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem;
+      color: var(--cyan);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      opacity: .7;
+    }
+
+    .product-desc {
+      font-size: .9rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .3rem .8rem;
+      border: 1px solid rgba(41,171,226,.3);
+      color: var(--cyan-lt);
+    }
+
+    /* ─────────────── ABOUT ─────────────── */
+    #about {
+      position: relative;
+      z-index: 1;
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(41,171,226,.1);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (max-width: 700px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .stat {
+      background: var(--navy-md);
+      border: 1px solid rgba(41,171,226,.12);
+      padding: 1.5rem;
+    }
+    .stat-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: .4rem;
+    }
+    .stat-label {
+      font-size: .8rem;
+      color: var(--gray);
+      line-height: 1.4;
+    }
+
+    /* ─────────────── CONTACT ─────────────── */
+    #contact {
+      position: relative;
+      z-index: 1;
+      padding: 6rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(41,171,226,.1);
+    }
+
+    .contact-inner { max-width: 600px; margin: 0 auto; }
+
+    .contact-inner p {
+      font-size: 1rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .contact-email {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      color: var(--cyan);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(41,171,226,.4);
+      padding-bottom: .2rem;
+      transition: border-color .2s;
+    }
+    .contact-email:hover { border-color: var(--cyan); }
+
+    /* ─────────────── FOOTER ─────────────── */
+    footer {
+      position: relative;
+      z-index: 1;
+      padding: 2rem 3rem;
+      border-top: 1px solid rgba(41,171,226,.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem;
+      color: var(--gray-dk);
+      letter-spacing: .06em;
+    }
+
+    /* ─────────────── ANIMATIONS ─────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─────────────── RESPONSIVE ─────────────── */
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { gap: 1.2rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo"><span>}</span>—|) <span>Imagina</span>Dev</div>
+    <div class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Digital Product Studio</div>
+    <div class="hero-mark">}—|)</div>
+    <div class="hero-name">
+      <span class="i">I</span><span class="rest">magina</span><span class="d">D</span><span class="rest">ev</span>
+    </div>
+    <div class="hero-llc">L L C</div>
+    <div class="divider"></div>
+    <div class="hero-tagline">
+      <span class="comment">/*</span> develop with imagination <span class="comment">*/</span>
+    </div>
+    <p class="hero-desc">
+      We imagine better ways to experience life. Then we build them.
+    </p>
+    <a href="#products" class="hero-cta">View Our Products →</a>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="section-label">// our apps</div>
+    <h2 class="section-title">Built for people.</h2>
+    <p class="section-sub">Three intelligent apps designed to capture your memories, discover your next destination, and share your story.</p>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-number">01 /</div>
+        <div class="product-name"><span>T</span>ripmory</div>
+        <div class="product-type">// travel photo organizer</div>
+        <p class="product-desc">
+          Your trip memories, beautifully organized. Tripmory automatically sorts your travel photos by destination and date, turning your camera roll into a personal travel archive.
+        </p>
+        <span class="product-badge">Coming Soon</span>
+      </div>
+
+      <div class="product-card">
+        <div class="product-number">02 /</div>
+        <div class="product-name"><span>D</span>estiq</div>
+        <div class="product-type">// intelligent travel routing</div>
+        <p class="product-desc">
+          Destination IQ. Destiq analyzes your travel history and preferences to recommend intelligent route combinations you would never have discovered on your own.
+        </p>
+        <span class="product-badge">Coming Soon</span>
+      </div>
+
+      <div class="product-card">
+        <div class="product-number">03 /</div>
+        <div class="product-name"><span>V</span>idscape</div>
+        <div class="product-type">// automated travel video maker</div>
+        <p class="product-desc">
+          Your cinematic escape. Vidscape automatically transforms your raw travel footage into polished, shareable videos — no editing skills required.
+        </p>
+        <span class="product-badge">Coming Soon</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">// about us</div>
+        <h2 class="section-title">We imagine.<br>We develop.</h2>
+        <p>ImaginaDev LLC is a Wyoming-based digital product studio focused on building intelligent, beautifully designed software.</p>
+        <p>We combine thoughtful design with intelligent technology to create products that feel effortless — digital products that people reach for every day because they genuinely make life better.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Products in development</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">iOS</div>
+          <div class="stat-label">Current platform focus</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Destinations to explore</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2026</div>
+          <div class="stat-label">Founded</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label">// get in touch</div>
+      <h2 class="section-title">Say hello.</h2>
+      <p>Interested in our products, partnerships, or just want to connect? We'd love to hear from you.</p>
+      <a href="mailto:info@imaginadev.com" class="contact-email">info@imaginadev.com</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ImaginaDev LLC. All rights reserved.</p>
+    <p>Sheridan, Wyoming · Built with purpose.</p>
+  </footer>
+
+</body>
+</html>
