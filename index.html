@@ -307,6 +307,12 @@
       padding: .3rem .8rem;
       border: 1px solid rgba(41,171,226,.3);
       color: var(--cyan-lt);
+      text-decoration: none;
+      transition: border-color .2s, color .2s;
+    }
+    .product-badge:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
     }
 
     /* ─────────────── ABOUT ─────────────── */
@@ -471,7 +477,7 @@
         <p class="product-desc">
           Your trip memories, beautifully organized. Tripmory automatically sorts your travel photos by destination and date, turning your camera roll into a personal travel archive.
         </p>
-        <span class="product-badge">Coming Soon</span>
+        <a href="https://tripmory.app" class="product-badge">tripmory.app →</a>
       </div>
 
       <div class="product-card">
@@ -481,7 +487,7 @@
         <p class="product-desc">
           Destination IQ. Destiq analyzes your travel history and preferences to recommend intelligent route combinations you would never have discovered on your own.
         </p>
-        <span class="product-badge">Coming Soon</span>
+        <a href="https://destiq.app" class="product-badge">destiq.app →</a>
       </div>
 
       <div class="product-card">
@@ -491,7 +497,7 @@
         <p class="product-desc">
           Your cinematic escape. Vidscape automatically transforms your raw travel footage into polished, shareable videos — no editing skills required.
         </p>
-        <span class="product-badge">Coming Soon</span>
+        <a href="https://vidscape.app" class="product-badge">vidscape.app →</a>
       </div>
 
     </div>
