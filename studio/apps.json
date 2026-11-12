@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "apps": [
+    {
+      "name": "Moonplace",
+      "appStoreID": 6819076774,
+      "line": "A daily logic puzzle: one moon in every row, column and region, and no two touching.",
+      "icon": "studio-icon-moonplace",
+      "iconURL": "https://imaginadev.com/studio/icons/moonplace.png",
+      "sharedFile": null,
+      "live": true
+    },
+    {
+      "name": "Heightlings",
+      "appStoreID": 6818657768,
+      "line": "Measure your kids with the camera and follow their growth on real charts, each one as a cartoon character.",
+      "icon": "studio-icon-heightlings",
+      "iconURL": "https://imaginadev.com/studio/icons/heightlings.png",
+      "sharedFile": null,
+      "live": true
+    },
+    {
+      "name": "Evenplace",
+      "appStoreID": 6822012554,
+      "line": "Fill the board with two kinds of pieces, evenly, never three alike in a line.",
+      "icon": "studio-icon-evenplace",
+      "iconURL": "https://imaginadev.com/studio/icons/evenplace.png",
+      "sharedFile": "evenplace-progress.json",
+      "live": true
+    },
+    {
+      "name": "Quiltplace",
+      "appStoreID": 6822010333,
+      "line": "Cut the grid into rectangles, one number in each, and watch a quilt come together.",
+      "icon": "studio-icon-quiltplace",
+      "iconURL": "https://imaginadev.com/studio/icons/quiltplace.png",
+      "sharedFile": "quiltplace-progress.json",
+      "live": false
+    },
+    {
+      "name": "Isleplace",
+      "appStoreID": 6823414764,
+      "line": "Join the islands with bridges until every island has the number it asks for.",
+      "icon": "studio-icon-isleplace",
+      "iconURL": "https://imaginadev.com/studio/icons/isleplace.png",
+      "sharedFile": "isleplace-progress.json",
+      "live": false
+    },
+    {
+      "name": "Nineplace",
+      "appStoreID": 6824695087,
+      "line": "A calm daily Sudoku whose hints name the technique and show the squares that prove it.",
+      "icon": "studio-icon-nineplace",
+      "iconURL": "https://imaginadev.com/studio/icons/nineplace.png",
+      "sharedFile": "nineplace-progress.json",
+      "live": false
+    }
+  ]
+}
