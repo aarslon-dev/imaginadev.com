@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "christmas-fireplace",
+      "kind": "scene",
+      "version": 1,
+      "title": "Christmas fireplace",
+      "subtitle": "A cozy, snowy night by the fire",
+      "visual": { "type": "video", "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace.mp4", "bytes": 8625885, "sha256": "f26092b320a2b61050acd28fab234293880298ad6a2fb19ef3ae9d2071b808ec" },
+      "still": { "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace-still.jpg", "bytes": 491355, "sha256": "bdd507e522a796a30250583e71cecf2cbe2be97b8939464372a881af1ee56f38" },
+      "audio": { "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace.m4a", "bytes": 9801076, "sha256": "95166081351a916251b370c01b5d03ff867d3eeff247d8bdb8dd206c2ffe5a65", "loop": "seamless" },
+      "freeUntil": "2027-01-06",
+      "showFrom": null,
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": { "url": "https://youtu.be/O3KKSbAxrmM", "from": "2026-11-28" }
+    }
+  ],
+  "youtube": {
+    "brown":     { "url": "https://youtu.be/T0Ch8qsZmZs" },
+    "white":     { "url": "https://youtu.be/mcum63-8F9Y" },
+    "pink":      { "url": "https://youtu.be/SJVCwJKiMQ8" },
+    "car":       { "url": "https://youtu.be/8r-wWHhWjsA" },
+    "fan":       { "url": "https://youtu.be/Av9LKZLTwWk" },
+    "heartbeat": { "url": "https://youtu.be/CIS5A3McCBs" },
+    "ocean":     { "url": "https://youtu.be/w0Ekxl5Qpr8" },
+    "shush":     { "url": "https://youtu.be/m1r0mSNhTxI", "from": "2026-11-18" },
+    "rain":      { "url": "https://youtu.be/zEkXi-Zmlv8", "from": "2026-11-21" },
+    "campfire":  { "url": "https://youtu.be/IjgB0ikLtzw", "from": "2026-11-23" }
+  }
+}
