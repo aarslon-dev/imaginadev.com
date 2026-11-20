@@ -7,26 +7,352 @@
       "version": 1,
       "title": "Christmas fireplace",
       "subtitle": "A cozy, snowy night by the fire",
-      "visual": { "type": "video", "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace.mp4", "bytes": 8625885, "sha256": "f26092b320a2b61050acd28fab234293880298ad6a2fb19ef3ae9d2071b808ec" },
-      "still": { "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace-still.jpg", "bytes": 491355, "sha256": "bdd507e522a796a30250583e71cecf2cbe2be97b8939464372a881af1ee56f38" },
-      "audio": { "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace.m4a", "bytes": 9801076, "sha256": "95166081351a916251b370c01b5d03ff867d3eeff247d8bdb8dd206c2ffe5a65", "loop": "seamless" },
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace.mp4",
+        "bytes": 8625885,
+        "sha256": "f26092b320a2b61050acd28fab234293880298ad6a2fb19ef3ae9d2071b808ec"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace-still.jpg",
+        "bytes": 491355,
+        "sha256": "bdd507e522a796a30250583e71cecf2cbe2be97b8939464372a881af1ee56f38"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/christmas-fireplace/christmas-fireplace.m4a",
+        "bytes": 9801076,
+        "sha256": "95166081351a916251b370c01b5d03ff867d3eeff247d8bdb8dd206c2ffe5a65",
+        "loop": "seamless"
+      },
       "freeUntil": "2027-01-06",
       "showFrom": null,
       "hideAfter": null,
       "minAppVersion": "1.0",
-      "youtube": { "url": "https://youtu.be/O3KKSbAxrmM", "from": "2026-11-28" }
+      "youtube": {
+        "url": "https://youtu.be/O3KKSbAxrmM",
+        "from": "2026-11-28"
+      }
+    },
+    {
+      "id": "new-england-morning-jazz",
+      "kind": "music",
+      "version": 1,
+      "title": "New England morning cafe",
+      "subtitle": "Light piano, guitar and sax",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/new-england-morning-jazz/new-england-morning-jazz.mp4",
+        "bytes": 2077399,
+        "sha256": "2c8b3970a7596de5070855ac092e0e9c928d7a6ebcbad356773409686131b7d7"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/new-england-morning-jazz/new-england-morning-jazz-still.jpg",
+        "bytes": 592236,
+        "sha256": "8cce9069bee3b8c87bab7822a03a6dde19c8981be3a5c29b812807d774523441"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/new-england-morning-jazz/new-england-morning-jazz.m4a",
+        "bytes": 30675987,
+        "sha256": "10cb61ad535952042d99b5eddec3c75489199cbaaa093936aab666c5387b4ca3",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-12-08",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/lm7LCXF60mQ",
+        "from": "2026-12-08"
+      }
+    },
+    {
+      "id": "skyline-loft-piano",
+      "kind": "music",
+      "version": 1,
+      "title": "Skyline loft piano",
+      "subtitle": "Soft jazz piano over the city lights",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/skyline-loft-piano/skyline-loft-piano.mp4",
+        "bytes": 2099519,
+        "sha256": "0491c0ebd59efe62ef0f8dc7d27080fdbcbcb83fbc1034e105a45a1f28f9cad9"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/skyline-loft-piano/skyline-loft-piano-still.jpg",
+        "bytes": 386004,
+        "sha256": "19cba726553d24188bdfd9e2854749afc313b2ae377bf41589b177f66404a95d"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/skyline-loft-piano/skyline-loft-piano.m4a",
+        "bytes": 28703320,
+        "sha256": "1eb73f76859625f7ca6d5a28484ebab9d78010176c5d080ec4d248febda52521",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-12-06",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/QH78fy2XRsQ",
+        "from": "2026-12-06"
+      }
+    },
+    {
+      "id": "barn-loft-folk-jazz",
+      "kind": "music",
+      "version": 1,
+      "title": "Barn loft folk jazz",
+      "subtitle": "Acoustic guitar and fiddle at dusk",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/barn-loft-folk-jazz/barn-loft-folk-jazz.mp4",
+        "bytes": 2066866,
+        "sha256": "0a9528d8298b88940872cc7772be4dae8ccfe80f17f9e40885c1bab75ede6c3c"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/barn-loft-folk-jazz/barn-loft-folk-jazz-still.jpg",
+        "bytes": 402739,
+        "sha256": "733a7f0b9951af76537bf8cf81dbdc77d3cb538cc783239e3a12edb440d08106"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/barn-loft-folk-jazz/barn-loft-folk-jazz.m4a",
+        "bytes": 30989286,
+        "sha256": "8ee7a8c9be8521571e86357a72bbbc60cb9deb4060d912fca93f28a1e82697b7",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-12-04",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/8xiPysji1KE",
+        "from": "2026-12-04"
+      }
+    },
+    {
+      "id": "rainy-new-york-jazz-club",
+      "kind": "music",
+      "version": 1,
+      "title": "Rainy night jazz club",
+      "subtitle": "Smoky sax and piano in New York",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/rainy-new-york-jazz-club/rainy-new-york-jazz-club.mp4",
+        "bytes": 2101133,
+        "sha256": "a5edb589c29b163d7edbe192d606e4639da2882d4c82796b3e48b40c47e65a77"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/rainy-new-york-jazz-club/rainy-new-york-jazz-club-still.jpg",
+        "bytes": 373121,
+        "sha256": "ef9e4dbca09d94e0c3222ba5bb5acc560cd3b2a1ca6c0a29d2580923569e6c27"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/rainy-new-york-jazz-club/rainy-new-york-jazz-club.m4a",
+        "bytes": 28783548,
+        "sha256": "ec1a59f8e3a2d6c78fb23ba96a5b19ac7be19e39b8b139906dd9d9d353d00588",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-12-02",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/zpBcW2Xy0ls",
+        "from": "2026-12-02"
+      }
+    },
+    {
+      "id": "parisian-riverside-cafe",
+      "kind": "music",
+      "version": 1,
+      "title": "Parisian riverside cafe",
+      "subtitle": "Accordion and guitar at golden hour",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/parisian-riverside-cafe/parisian-riverside-cafe.mp4",
+        "bytes": 2255971,
+        "sha256": "52e500776b01aeab3d8595b53a089afb8046e6ad79c73cf97d06c06e6e0b7915"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/parisian-riverside-cafe/parisian-riverside-cafe-still.jpg",
+        "bytes": 526275,
+        "sha256": "09c6a833cf021f015cb22c71a7b3c29d5ff952798b69dab084916eda2de880ef"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/parisian-riverside-cafe/parisian-riverside-cafe.m4a",
+        "bytes": 30698385,
+        "sha256": "ac09c44e69a4184c3b4867c0749ebd344168f356cc81a3ff7f31859c72de0192",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-11-30",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/KqvgB51a6Qg",
+        "from": "2026-11-30"
+      }
+    },
+    {
+      "id": "lakeside-bossa-nova",
+      "kind": "music",
+      "version": 1,
+      "title": "Lakeside bossa nova",
+      "subtitle": "Easy guitar by the lake at sunset",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/lakeside-bossa-nova/lakeside-bossa-nova.mp4",
+        "bytes": 2104738,
+        "sha256": "d50874162257732a00e6a687c4d132cba19b5025ccb95bad65327c5e4bc41af6"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/lakeside-bossa-nova/lakeside-bossa-nova-still.jpg",
+        "bytes": 509816,
+        "sha256": "42e54d2c8611991a5d313787f94cd42df53fec8fecbd3c06484561cb125dd421"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/lakeside-bossa-nova/lakeside-bossa-nova.m4a",
+        "bytes": 30739638,
+        "sha256": "8e9f76ea426adedfb6c088cddf5c7a4fea820bd05a527fc47ffb79ae797b0a3b",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-11-25",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/i0Hc6MeSTtA",
+        "from": "2026-11-25"
+      }
+    },
+    {
+      "id": "new-york-window-jazz",
+      "kind": "music",
+      "version": 1,
+      "title": "New York window jazz",
+      "subtitle": "Piano jazz and soft autumn rain",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/new-york-window-jazz/new-york-window-jazz.mp4",
+        "bytes": 2090310,
+        "sha256": "bbd19564537eed396319eeb6fd5102808631036cd2eaaeef6e682a70f37f28bb"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/new-york-window-jazz/new-york-window-jazz-still.jpg",
+        "bytes": 451157,
+        "sha256": "f7484541f5f4fe62c194e9b5c02ae31e08f8bb34a962edba819f05bc259f1a2c"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/new-york-window-jazz/new-york-window-jazz.m4a",
+        "bytes": 28916608,
+        "sha256": "f961f7fa67165c4845654586597b20c81b72d241c513aa6c27fbf5be5a72be7c",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": "2026-11-22",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/EyKTBTcE8Wg",
+        "from": "2026-11-22"
+      }
+    },
+    {
+      "id": "rainy-night-cafe-piano",
+      "kind": "music",
+      "version": 1,
+      "title": "Rainy night cafe",
+      "subtitle": "Soft piano, rain and a crackling fire",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/rainy-night-cafe-piano/rainy-night-cafe-piano.mp4",
+        "bytes": 2107783,
+        "sha256": "50f8145ff5a1797f640f1896f6e601a80073a71e809533039702f9c215b8dbeb"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/rainy-night-cafe-piano/rainy-night-cafe-piano-still.jpg",
+        "bytes": 515990,
+        "sha256": "4e87460c21b608b7a3ade78a55400e37aede407c4f23738419a1fa83cb587160"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/rainy-night-cafe-piano/rainy-night-cafe-piano.m4a",
+        "bytes": 30795659,
+        "sha256": "c0941476b19daaaaa9fba263d8b3a61d50fde8bb28eb1948bdfa5044eb13789f",
+        "loop": "track"
+      },
+      "freeUntil": null,
+      "showFrom": null,
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/AsUJJVzRsYQ"
+      }
+    },
+    {
+      "id": "thanksgiving-harbor-jazz",
+      "kind": "music",
+      "version": 1,
+      "title": "Harbor terrace jazz",
+      "subtitle": "Warm piano and sax by the water",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/thanksgiving-harbor-jazz/thanksgiving-harbor-jazz.mp4",
+        "bytes": 2096144,
+        "sha256": "006c68f7d7a738b68399f7950938c6fcc181ce9f3db8922b81a386fc576a541a"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/thanksgiving-harbor-jazz/thanksgiving-harbor-jazz-still.jpg",
+        "bytes": 514582,
+        "sha256": "dea5e09fb85dcb5a411c1a621f47b9ff36ba2c6f1f1177c8fd3df725dd91abb3"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/thanksgiving-harbor-jazz/thanksgiving-harbor-jazz.m4a",
+        "bytes": 30724680,
+        "sha256": "5a8f30b9aba877d4522f001ebc4b68b9d4b2fb096dc609573d2b803045b31fb9",
+        "loop": "track"
+      },
+      "freeUntil": "2026-11-29",
+      "showFrom": null,
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/6mnudJN4-7w"
+      }
     }
   ],
   "youtube": {
-    "brown":     { "url": "https://youtu.be/T0Ch8qsZmZs" },
-    "white":     { "url": "https://youtu.be/mcum63-8F9Y" },
-    "pink":      { "url": "https://youtu.be/SJVCwJKiMQ8" },
-    "car":       { "url": "https://youtu.be/8r-wWHhWjsA" },
-    "fan":       { "url": "https://youtu.be/Av9LKZLTwWk" },
-    "heartbeat": { "url": "https://youtu.be/CIS5A3McCBs" },
-    "ocean":     { "url": "https://youtu.be/w0Ekxl5Qpr8" },
-    "shush":     { "url": "https://youtu.be/m1r0mSNhTxI", "from": "2026-11-18" },
-    "rain":      { "url": "https://youtu.be/zEkXi-Zmlv8", "from": "2026-11-21" },
-    "campfire":  { "url": "https://youtu.be/IjgB0ikLtzw", "from": "2026-11-23" }
+    "brown": {
+      "url": "https://youtu.be/T0Ch8qsZmZs"
+    },
+    "white": {
+      "url": "https://youtu.be/mcum63-8F9Y"
+    },
+    "pink": {
+      "url": "https://youtu.be/SJVCwJKiMQ8"
+    },
+    "car": {
+      "url": "https://youtu.be/8r-wWHhWjsA"
+    },
+    "fan": {
+      "url": "https://youtu.be/Av9LKZLTwWk"
+    },
+    "heartbeat": {
+      "url": "https://youtu.be/CIS5A3McCBs"
+    },
+    "ocean": {
+      "url": "https://youtu.be/w0Ekxl5Qpr8"
+    },
+    "shush": {
+      "url": "https://youtu.be/m1r0mSNhTxI",
+      "from": "2026-11-18"
+    },
+    "rain": {
+      "url": "https://youtu.be/zEkXi-Zmlv8",
+      "from": "2026-11-21"
+    },
+    "campfire": {
+      "url": "https://youtu.be/IjgB0ikLtzw",
+      "from": "2026-11-23"
+    }
   }
 }
