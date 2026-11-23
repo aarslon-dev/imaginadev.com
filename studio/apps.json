@@ -29,6 +29,15 @@
       "live": true
     },
     {
+      "name": "Sleeplings",
+      "appStoreID": 6831368757,
+      "line": "Sleep sounds, cozy scenes and music for little ones, with a sleep timer and a dark sleep screen.",
+      "icon": "studio-icon-sleeplings",
+      "iconURL": "https://imaginadev.com/studio/icons/sleeplings.png",
+      "sharedFile": null,
+      "live": true
+    },
+    {
       "name": "Quiltplace",
       "appStoreID": 6822010333,
       "line": "Cut the grid into rectangles, one number in each, and watch a quilt come together.",
