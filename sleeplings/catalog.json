@@ -34,6 +34,38 @@
       }
     },
     {
+      "id": "thanksgiving-night-autumn-rain",
+      "kind": "scene",
+      "version": 1,
+      "title": "Thanksgiving rain",
+      "subtitle": "Soft autumn rain at a cozy window, with distant thunder",
+      "visual": {
+        "type": "video",
+        "url": "https://imaginadev.com/sleeplings/media/thanksgiving-night-autumn-rain/thanksgiving-night-autumn-rain.mp4",
+        "bytes": 6087174,
+        "sha256": "a21ba81a389073ffeba21377b5d73924fa866e1223ebdbf33abd65d7867b47c4"
+      },
+      "still": {
+        "url": "https://imaginadev.com/sleeplings/media/thanksgiving-night-autumn-rain/thanksgiving-night-autumn-rain-still.jpg",
+        "bytes": 253267,
+        "sha256": "facdda5bf05f3a257b4677f19b6422a82ff946f34792e510baf8ad9d32143226"
+      },
+      "audio": {
+        "url": "https://imaginadev.com/sleeplings/media/thanksgiving-night-autumn-rain/thanksgiving-night-autumn-rain.m4a",
+        "bytes": 9143114,
+        "sha256": "55467e2474a874519f9341a66bc52052635e095c0618408447a39fa2f0754ef7",
+        "loop": "seamless"
+      },
+      "freeUntil": "2026-11-30",
+      "showFrom": "2026-11-26",
+      "hideAfter": null,
+      "minAppVersion": "1.0",
+      "youtube": {
+        "url": "https://youtu.be/jR1p_hAu9HY",
+        "from": "2026-11-16"
+      }
+    },
+    {
       "id": "new-england-morning-jazz",
       "kind": "music",
       "version": 1,
