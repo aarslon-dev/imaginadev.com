@@ -3,37 +3,179 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sleeplings Support</title>
-<meta name="description" content="Help and support for Sleeplings, sleep sounds and cozy scenes for iPhone and iPad by ImaginaDev LLC.">
+<title>Sleeplings: free sleep sounds and white noise for babies and toddlers</title>
+<meta name="description" content="Sleeplings is a free sleep sounds app for babies and toddlers on iPhone and iPad: white noise, brown noise, pink noise, car ride, fan, heartbeat, ocean waves and shushing, with a sleep timer, dark sleep screen and child lock. No ads, no account.">
+<link rel="canonical" href="https://imaginadev.com/sleeplings/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sleeplings: sleep sounds for little ones">
+<meta property="og:description" content="Free white noise and sleep sounds for babies and toddlers, with a sleep timer and a dark sleep screen. No ads, no account.">
+<meta property="og:url" content="https://imaginadev.com/sleeplings/">
+<meta property="og:image" content="https://imaginadev.com/studio/icons/sleeplings.png">
+<meta name="apple-itunes-app" content="app-id=6831368757">
+<link rel="icon" href="/assets/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Sleeplings: Sleep Sounds",
+  "alternateName": "Sleeplings",
+  "url": "https://imaginadev.com/sleeplings/",
+  "sameAs": [
+    "https://apps.apple.com/app/id6831368757",
+    "https://www.youtube.com/@sleeplings"
+  ],
+  "description": "Sleep sounds, cozy scenes and music for babies, toddlers and tired parents, with a sleep timer, a dark sleep screen and a child lock. Every sound is free, with no ads and no account.",
+  "image": "https://imaginadev.com/studio/icons/sleeplings.png",
+  "screenshot": [
+    "https://imaginadev.com/assets/sleeplings-screen-1.webp",
+    "https://imaginadev.com/assets/sleeplings-screen-2.webp",
+    "https://imaginadev.com/assets/sleeplings-screen-3.webp"
+  ],
+  "operatingSystem": "iOS, iPadOS",
+  "applicationCategory": "LifestyleApplication",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Sleeplings",
+      "price": "0",
+      "priceCurrency": "USD",
+      "url": "https://apps.apple.com/app/id6831368757"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "ImaginaDev LLC",
+    "url": "https://imaginadev.com",
+    "email": "support@imaginadev.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Sleeplings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleeplings is a sleep sounds app for babies, toddlers and tired parents: white noise, brown noise, pink noise, car ride, fan, heartbeat, ocean waves and shushing, plus cozy looping scenes and music, with a sleep timer, a dark sleep screen and a child lock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sleeplings free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every sound, the sleep timer, the sleep screen, the child lock and favorites are free, with no ads and no account. Sleeplings Plus is a one-time purchase, not a subscription, that adds the mixer, every scene in full, and the sounds and scenes added later, with Family Sharing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it keep playing with the screen locked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Sleeplings keeps playing with the screen locked or while you use other apps, and the sleep timer fades the sound out gently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sleeplings collect data about my child?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Sleeplings collects nothing about you or your family. Favorites, mixes and settings stay on your device."
+      }
+    }
+  ]
+}
+</script>
 <style>
-  :root { --ink:#1C2A4A; --muted:#4F5A73; --bg:#F7F2E7; --card:#FFFDF8; --line:#E4DBC8; --gold:#9A6F12; }
+  :root { --ink:#1C2A4A; --muted:#4F5A73; --bg:#F7F2E7; --card:#FFFDF8; --line:#E4DBC8; --gold:#9A6F12; --navy:#1C2A4A; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
          font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  main { max-width:880px; margin:0 auto; padding:40px 20px 64px; }
   .brand { font-weight:600; color:var(--gold); text-decoration:none; letter-spacing:0.02em; }
-  h1 { font-family:Georgia, "Times New Roman", serif; font-size:2.2rem; line-height:1.2; margin:24px 0 6px; }
-  h2 { font-size:1.15rem; margin:36px 0 8px; }
-  h3 { font-size:1rem; margin:22px 0 4px; }
-  p, li { color:var(--ink); }
-  .meta { color:var(--muted); margin:0 0 28px; }
+  .hero { display:flex; gap:20px; align-items:center; margin:28px 0 10px; }
+  .hero img { width:84px; height:84px; border-radius:20px; box-shadow:0 6px 18px rgba(60,40,20,.18); flex:none; }
+  h1 { font-family:Georgia, "Times New Roman", serif; font-size:2.4rem; line-height:1.15; margin:0; }
+  .tagline { color:var(--muted); margin:4px 0 0; font-size:1.05rem; }
+  .lead { font-size:1.12rem; max-width:680px; margin:22px 0 22px; }
+  .store { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600;
+           padding:13px 24px; border-radius:999px; }
+  .store:hover { background:#2B3D66; }
+  .facts { color:var(--muted); font-size:0.95rem; margin:12px 0 0; }
+  .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin:36px 0 8px; }
+  .shots figure { margin:0; }
+  .shots img { width:100%; height:auto; border-radius:22px; display:block; box-shadow:0 10px 26px rgba(60,40,20,.16); }
+  .shots figcaption { color:var(--muted); font-size:0.88rem; margin-top:8px; text-align:center; }
+  h2 { font-family:Georgia, "Times New Roman", serif; font-size:1.55rem; margin:48px 0 10px; }
+  h3 { font-size:1.02rem; margin:22px 0 4px; }
+  .grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; }
+  .card h3 { margin:0 0 4px; }
+  .card p { margin:0; }
   .summary { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; }
   a { color:var(--ink); }
-  footer { margin-top:48px; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  footer { margin-top:56px; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  @media (max-width:640px) {
+    h1 { font-size:2rem; }
+    .hero img { width:68px; height:68px; border-radius:16px; }
+    .shots { grid-template-columns:repeat(3, 72%); overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+    .shots figure { scroll-snap-align:start; }
+    .grid { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
 <main>
-  <a class="brand" href="https://imaginadev.com/">ImaginaDev</a>
-  <h1>Sleeplings Support</h1>
-  <p class="meta">Sleep sounds and cozy scenes for little ones · ImaginaDev LLC</p>
+  <a class="brand" href="https://imaginadev.com">ImaginaDev</a>
 
+  <div class="hero">
+    <img src="/studio/icons/sleeplings.png" width="84" height="84" alt="Sleeplings app icon">
+    <div>
+      <h1>Sleeplings</h1>
+      <p class="tagline">Sleep sounds for babies, toddlers and tired parents</p>
+    </div>
+  </div>
+
+  <p class="lead">Sleeplings plays soft, steady sounds that help little ones fall asleep, at home, in the car or away: white noise, brown noise, pink noise, car ride, fan, heartbeat, ocean waves and shushing. It keeps playing with the screen locked, fades out on a sleep timer, and turns the screen black so the light won't wake anyone. Every sound is free, with no ads and no account.</p>
+
+  <a class="store" href="https://apps.apple.com/app/id6831368757">Download on the App Store</a>
+  <p class="facts">Free · No ads · iPhone, iPad and iPhone Duo · No account needed · Optional one-time Sleeplings Plus</p>
+
+  <div class="shots">
+    <figure><img src="/assets/sleeplings-screen-1.webp" width="640" height="1391" alt="The Sleeplings home screen with sleep sounds like brown noise, white noise and car ride"><figcaption>Every sound is free</figcaption></figure>
+    <figure><img src="/assets/sleeplings-screen-2.webp" width="640" height="1391" alt="Sleeplings playing brown noise with a sleep timer and sleep mode"><figcaption>Sleep timer and a dark sleep screen</figcaption></figure>
+    <figure><img src="/assets/sleeplings-screen-3.webp" width="640" height="1391" alt="A cozy Sleeplings scene of rain on a cabin window"><figcaption>Cozy scenes and music</figcaption></figure>
+  </div>
+
+  <h2>What you get</h2>
+  <div class="grid">
+    <div class="card"><h3>Sounds, all free</h3><p>White noise, brown noise, pink noise, car ride, fan, heartbeat, ocean waves and shushing. No ads, no account.</p></div>
+    <div class="card"><h3>Made for bedtime</h3><p>Plays with the screen locked or in the background, and a sleep timer from 15 minutes to 8 hours, or all night, with a gentle fade out.</p></div>
+    <div class="card"><h3>Sleep mode and child lock</h3><p>Sleep mode turns the screen black and dims it. The child lock keeps little hands from changing anything.</p></div>
+    <div class="card"><h3>Cozy scenes and music</h3><p>Rain on a cabin window, a crackling campfire and seasonal music, as calm looping pictures with their own sound. New ones arrive without an app update.</p></div>
+    <div class="card"><h3>Every screen</h3><p>Designed for iPhone, iPad and iPhone Duo, in portrait and landscape. Half open the Duo like a book: the scene on one side, the controls on the other.</p></div>
+    <div class="card"><h3>Private by design</h3><p>Sleeplings collects nothing about you or your family. Favorites, mixes and settings stay on your device.</p></div>
+  </div>
+
+  <h2>Is Sleeplings for you?</h2>
+  <h3>Who is it for?</h3>
+  <p>Parents of babies and toddlers who want a white noise or sleep sound app for naps, bedtime and car rides, without ads, accounts or subscriptions. Tired grown-ups use it too.</p>
+  <h3>What does it cost?</h3>
+  <p>Every sound, the sleep timer, the sleep screen, the child lock and favorites are free, with no ads. Sleeplings Plus is a one-time purchase, not a subscription, that adds the mixer for blends of up to three sounds, every scene in full, and the sounds and scenes we add later, shared through Family Sharing.</p>
+
+  <h2>Help and support</h2>
   <div class="summary">
     <strong>Need help?</strong>
     <p style="margin:6px 0 0">Email <a href="mailto:support@imaginadev.com">support@imaginadev.com</a>. Tell us your iPhone or iPad model and iOS version if something isn't working. In the app, Settings, Contact fills these in for you.</p>
   </div>
 
-  <h2>Common questions</h2>
+  
 
   <h3>Does the sound keep playing when the screen locks?</h3>
   <p>Yes. Sleeplings keeps playing with the screen locked or while you use other apps, and you can pause it from the Lock Screen or Control Center. To hear another app at the same time, turn on Play alongside other audio in the app's Settings.</p>
@@ -62,7 +204,8 @@
   <h2>Privacy</h2>
   <p>Sleeplings collects nothing about you or your family. Read the full <a href="/sleeplings/privacy">privacy policy</a>.</p>
 
-  <footer>© 2026 ImaginaDev LLC · <a href="https://imaginadev.com/">imaginadev.com</a></footer>
+
+  <footer>Sleeplings is made by ImaginaDev LLC. See <a href="https://imaginadev.com/#apps">our other apps</a>. © 2026 ImaginaDev LLC</footer>
 </main>
 </body>
 </html>

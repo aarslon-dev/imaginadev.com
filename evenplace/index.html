@@ -3,38 +3,198 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Evenplace Support</title>
-<meta name="description" content="Help and support for Evenplace, a calm daily puzzle of pairs for iPhone by ImaginaDev LLC.">
+<title>Evenplace: a calm daily Takuzu (Binairo) logic puzzle for iPhone</title>
+<meta name="description" content="Evenplace is a free daily Takuzu logic puzzle game for iPhone, also known as Binairo: fill the grid with two kinds of pieces, equal numbers in every row and column, never three alike in a line. Lessons and hints that teach, no account needed.">
+<link rel="canonical" href="https://imaginadev.com/evenplace/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Evenplace: a calm daily logic puzzle for iPhone">
+<meta property="og:description" content="Equal feathers and stones in every row and column, never three alike in a line. A new puzzle every day, with hints that teach.">
+<meta property="og:url" content="https://imaginadev.com/evenplace/">
+<meta property="og:image" content="https://imaginadev.com/studio/icons/evenplace.png">
+<meta name="apple-itunes-app" content="app-id=6822012554">
+<link rel="icon" href="/assets/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "MobileApplication"
+  ],
+  "name": "Evenplace",
+  "url": "https://imaginadev.com/evenplace/",
+  "sameAs": [
+    "https://apps.apple.com/app/id6822012554"
+  ],
+  "description": "A calm daily Takuzu (Binairo, binary) logic puzzle. Fill every cell with one of two pieces so each row and column holds equally many of each, no three alike sit in a row, and every = or x chip between two cells is honored.",
+  "image": "https://imaginadev.com/studio/icons/evenplace.png",
+  "screenshot": [
+    "https://imaginadev.com/assets/evenplace-screen-1.webp",
+    "https://imaginadev.com/assets/evenplace-screen-2.webp",
+    "https://imaginadev.com/assets/evenplace-screen-3.webp"
+  ],
+  "operatingSystem": "iOS",
+  "applicationCategory": "GameApplication",
+  "genre": [
+    "Puzzle",
+    "Logic puzzle",
+    "Takuzu",
+    "Binairo"
+  ],
+  "gamePlatform": "iPhone",
+  "playMode": "SinglePlayer",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Evenplace",
+      "price": "0",
+      "priceCurrency": "USD",
+      "url": "https://apps.apple.com/app/id6822012554"
+    },
+    {
+      "@type": "Offer",
+      "name": "Evenplace Plus (removes ads, free hints, all piece sets; one-time purchase)",
+      "price": "3.99",
+      "priceCurrency": "USD"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "ImaginaDev LLC",
+    "url": "https://imaginadev.com",
+    "email": "support@imaginadev.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kind of puzzle is Evenplace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evenplace is a Takuzu puzzle, also called Binairo or a binary puzzle, with = and x chips between cells, the same rules some people know from Tango puzzles. Fill every cell with one of two pieces so each row and column holds equally many of each, no three alike sit in a row, = means two cells match and x means they differ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Evenplace free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every Daily, every Endless puzzle and every lesson is free. Optional short ads give extra hints. Evenplace Plus is a one-time purchase ($3.99 in the US) that removes every ad, makes every hint free and unlocks all five piece sets, with Family Sharing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to guess?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Every Evenplace puzzle has exactly one solution and can be solved by logic alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Evenplace needs no account, and your games and progress stay on your iPhone. Game Center is optional."
+      }
+    }
+  ]
+}
+</script>
 <style>
-  :root { --ink:#1C2A4A; --muted:#4F5A73; --bg:#F7F2E7; --card:#FFFDF8; --line:#E4DBC8; --gold:#9A6F12; }
+  :root { --ink:#1C2A4A; --muted:#4F5A73; --bg:#F7F2E7; --card:#FFFDF8; --line:#E4DBC8; --gold:#9A6F12; --navy:#1C2A4A; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
          font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  main { max-width:880px; margin:0 auto; padding:40px 20px 64px; }
   .brand { font-weight:600; color:var(--gold); text-decoration:none; letter-spacing:0.02em; }
-  h1 { font-family:Georgia, "Times New Roman", serif; font-size:2.2rem; line-height:1.2; margin:24px 0 6px; }
-  h2 { font-size:1.15rem; margin:36px 0 8px; }
-  h3 { font-size:1rem; margin:22px 0 4px; }
-  p, li { color:var(--ink); }
-  .meta { color:var(--muted); margin:0 0 28px; }
+  .hero { display:flex; gap:20px; align-items:center; margin:28px 0 10px; }
+  .hero img { width:84px; height:84px; border-radius:20px; box-shadow:0 6px 18px rgba(60,40,20,.18); flex:none; }
+  h1 { font-family:Georgia, "Times New Roman", serif; font-size:2.4rem; line-height:1.15; margin:0; }
+  .tagline { color:var(--muted); margin:4px 0 0; font-size:1.05rem; }
+  .lead { font-size:1.12rem; max-width:680px; margin:22px 0 22px; }
+  .store { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600;
+           padding:13px 24px; border-radius:999px; }
+  .store:hover { background:#2B3D66; }
+  .facts { color:var(--muted); font-size:0.95rem; margin:12px 0 0; }
+  .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin:36px 0 8px; }
+  .shots figure { margin:0; }
+  .shots img { width:100%; height:auto; border-radius:22px; display:block; box-shadow:0 10px 26px rgba(60,40,20,.16); }
+  .shots figcaption { color:var(--muted); font-size:0.88rem; margin-top:8px; text-align:center; }
+  h2 { font-family:Georgia, "Times New Roman", serif; font-size:1.55rem; margin:48px 0 10px; }
+  h3 { font-size:1.02rem; margin:22px 0 4px; }
+  .grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; }
+  .card h3 { margin:0 0 4px; }
+  .card p { margin:0; }
   .summary { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; }
-  .summary ul { margin:8px 0 0; padding-left:20px; }
   a { color:var(--ink); }
-  footer { margin-top:48px; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  footer { margin-top:56px; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  @media (max-width:640px) {
+    h1 { font-size:2rem; }
+    .hero img { width:68px; height:68px; border-radius:16px; }
+    .shots { grid-template-columns:repeat(3, 72%); overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+    .shots figure { scroll-snap-align:start; }
+    .grid { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
 <main>
   <a class="brand" href="https://imaginadev.com">ImaginaDev</a>
-  <h1>Evenplace Support</h1>
-  <p class="meta">A calm daily puzzle of pairs · ImaginaDev LLC</p>
 
+  <div class="hero">
+    <img src="/studio/icons/evenplace.png" width="84" height="84" alt="Evenplace app icon">
+    <div>
+      <h1>Evenplace</h1>
+      <p class="tagline">A calm daily Takuzu puzzle for iPhone</p>
+    </div>
+  </div>
+
+  <p class="lead">Evenplace is a Takuzu style puzzle game, also known as Binairo or a binary puzzle. Fill every cell with one of two pieces, like feathers and stones, so each row and column holds equally many of each, no three alike sit in a row, and every = or x chip between two cells is honored. A new puzzle every day, lessons and hints that teach each technique, and every puzzle solvable by logic alone. Free, with optional ads. Evenplace Plus removes them.</p>
+
+  <a class="store" href="https://apps.apple.com/app/id6822012554">Download on the App Store</a>
+  <p class="facts">Free · iPhone · No account needed · One-time Evenplace Plus, $3.99 in the US</p>
+
+  <div class="shots">
+    <figure><img src="/assets/evenplace-screen-1.webp" width="640" height="1391" alt="An Evenplace daily puzzle with feathers and stones on a grid"><figcaption>Equal feathers and stones in every line</figcaption></figure>
+    <figure><img src="/assets/evenplace-screen-2.webp" width="640" height="1391" alt="An Evenplace hint called Pairs, explaining the next step on the board"><figcaption>Hints that name the technique</figcaption></figure>
+    <figure><img src="/assets/evenplace-screen-3.webp" width="640" height="1391" alt="An Evenplace puzzle with the fall set of leaves and acorns"><figcaption>Pieces for every season</figcaption></figure>
+  </div>
+
+  <h2>What you get</h2>
+  <div class="grid">
+    <div class="card"><h3>The Daily</h3><p>One puzzle for everyone, every morning: easy on Mondays and Sundays, Medium midweek, Hard on Thursdays and a Super Hard 12x12 on Saturdays. Keep a streak and earn a free hint every seventh day.</p></div>
+    <div class="card"><h3>Hints that teach</h3><p>A hint names the technique, shows the cells and chips it rests on and explains the step in a sentence or two. The first hint in every puzzle is free.</p></div>
+    <div class="card"><h3>The Greenhouse</h3><p>Six short lessons teach the techniques that solve every puzzle: Pairs, Sandwich, Chips, Line Count, Last Piece and What If. Grow from Seedling to Head Gardener.</p></div>
+    <div class="card"><h3>Endless</h3><p>Fresh puzzles at four levels, from a calm 6x6 to a 12x12 Super Hard. Puzzles adapt to how you play, and you can leave and pick up later.</p></div>
+    <div class="card"><h3>Pieces for every season</h3><p>Classic feather and stone, or the season's pair: flower and leaf, sun and watermelon, leaf and acorn, snowflake and mitten. The season's set is free while it lasts.</p></div>
+    <div class="card"><h3>Mistakes are never fatal</h3><p>Rule breaks are flagged on the board and explained, never game over, and Restart is always free. Dynamic Type, VoiceOver and Reduce Motion are supported throughout.</p></div>
+  </div>
+
+  <h2>Is Evenplace for you?</h2>
+  <h3>What kind of puzzle is it?</h3>
+  <p>Evenplace is a Takuzu puzzle, also called Binairo or a binary puzzle, with = and x chips between cells: the same rules some people know from Tango puzzles. Here you play with feathers and stones, or the season's pieces.</p>
+  <h3>Who is it for?</h3>
+  <p>Anyone who enjoys calm brain games like Sudoku and wants a short daily puzzle. Beginners can start with the guided first puzzle and the Greenhouse lessons; experienced solvers can go up to 12x12 Super Hard boards.</p>
+  <h3>Do I need to guess?</h3>
+  <p>Never. Every puzzle has exactly one solution and can be solved by logic alone.</p>
+  <h3>What does it cost?</h3>
+  <p>Evenplace is free: every Daily, every Endless puzzle and every lesson. You can choose to watch a short ad for an extra hint. Evenplace Plus is a one-time purchase ($3.99 in the US) that removes every ad, makes every hint free and unlocks all five piece sets, with Family Sharing.</p>
+
+  <h2>Help and support</h2>
   <div class="summary">
     <strong>Need help?</strong>
     <p style="margin:6px 0 0">Email <a href="mailto:support@imaginadev.com">support@imaginadev.com</a>. Tell us your iPhone model and iOS version if something isn't working.</p>
   </div>
 
-  <h2>Common questions</h2>
+  
   <h3>How do I play?</h3>
   <p>Fill the grid with two kinds of pieces, such as feathers and stones. Every row and every column holds as many of one piece as of the other, and never three of the same piece in a row. An = chip between two cells means they hold the same piece; an x chip means they differ. Tap a cell to place the first piece, tap again for the second, and once more to clear it. Every puzzle has one solution and can be solved by logic alone. The Greenhouse has short lessons for each solving technique, and How to play in Settings replays the guided first puzzle.</p>
   <h3>What are the red marks on my board?</h3>
@@ -57,7 +217,8 @@
   <h2>Privacy</h2>
   <p>Read the full <a href="/evenplace/privacy">privacy policy</a>.</p>
 
-  <footer>© 2026 ImaginaDev LLC · <a href="https://imaginadev.com">imaginadev.com</a></footer>
+
+  <footer>Evenplace is made by ImaginaDev LLC, makers of calm daily puzzle games. See <a href="https://imaginadev.com/#apps">our other apps</a>. © 2026 ImaginaDev LLC</footer>
 </main>
 </body>
 </html>
