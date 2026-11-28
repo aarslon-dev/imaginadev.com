@@ -1,0 +1,20 @@
+# ImaginaDev
+
+> ImaginaDev LLC is a small US studio that makes calm daily puzzle games and family apps for iPhone. No accounts, no tracking of personal data by us, and honest optional ads with a one-time purchase to remove them.
+
+## Apps on the App Store
+
+- [Moonplace](https://imaginadev.com/moonplace/): a free daily Star Battle style logic puzzle for iPhone. Place one moon in every row, column and colored region, with no two moons touching. Hints explain the logic. App Store: https://apps.apple.com/app/id6819076774
+- [Heightlings](https://imaginadev.com/heightlings/): measure your kids' height with the iPhone camera and follow their growth on CDC and WHO growth charts, each child as a cartoon character. App Store: https://apps.apple.com/app/id6818657768
+- [Evenplace](https://imaginadev.com/evenplace/): a free daily Takuzu (binary puzzle) game for iPhone. Fill the board with two kinds of pieces, evenly, never three alike in a line. App Store: https://apps.apple.com/app/id6822012554
+- [Sleeplings](https://imaginadev.com/sleeplings/): sleep sounds, cozy scenes and music for babies and little ones, with a sleep timer and a dark sleep screen. App Store: https://apps.apple.com/app/id6831368757
+
+## Coming soon
+
+- [Quiltplace](https://imaginadev.com/quiltplace/): a daily Shikaku puzzle. Cut the grid into rectangles, one number in each.
+- [Isleplace](https://imaginadev.com/isleplace/): a daily Bridges (Hashiwokakero) puzzle. Join the islands with bridges until every island has its number.
+- [Nineplace](https://imaginadev.com/nineplace/): a calm daily Sudoku whose hints name the technique and show the squares that prove it.
+
+## Contact
+
+- Support: support@imaginadev.com

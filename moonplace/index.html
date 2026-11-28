@@ -3,40 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moonplace Support</title>
-<meta name="description" content="Help and support for Moonplace, a daily logic puzzle game for iPhone by ImaginaDev LLC.">
+<title>Moonplace: a calm daily Star Battle logic puzzle for iPhone</title>
+<meta name="description" content="Moonplace is a free daily logic puzzle game for iPhone in the Star Battle style: place one moon in every row, column and colored region, with no two moons touching. A new puzzle every day, hints that explain the logic, no account needed.">
+<link rel="canonical" href="https://imaginadev.com/moonplace/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moonplace: a calm daily logic puzzle for iPhone">
+<meta property="og:description" content="One moon in every row, column and region, and no two touching. A new puzzle every day, with hints that teach.">
+<meta property="og:url" content="https://imaginadev.com/moonplace/">
+<meta property="og:image" content="https://imaginadev.com/studio/icons/moonplace.png">
+<meta name="apple-itunes-app" content="app-id=6819076774">
+<link rel="icon" href="/assets/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["VideoGame", "MobileApplication"],
+  "name": "Moonplace: Daily Logic Puzzle",
+  "alternateName": "Moonplace",
+  "url": "https://imaginadev.com/moonplace/",
+  "sameAs": ["https://apps.apple.com/app/id6819076774"],
+  "description": "A calm daily logic puzzle in the Star Battle style. Place one moon in every row, every column and every colored region, with no two moons touching, not even diagonally. Every puzzle has one solution reachable by logic alone.",
+  "image": "https://imaginadev.com/studio/icons/moonplace.png",
+  "screenshot": [
+    "https://imaginadev.com/assets/moonplace-screen-1.webp",
+    "https://imaginadev.com/assets/moonplace-screen-2.webp",
+    "https://imaginadev.com/assets/moonplace-screen-3.webp"
+  ],
+  "operatingSystem": "iOS",
+  "applicationCategory": "GameApplication",
+  "genre": ["Puzzle", "Logic puzzle", "Star Battle"],
+  "gamePlatform": "iPhone",
+  "playMode": "SinglePlayer",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": [
+    {"@type": "Offer", "name": "Moonplace", "price": "0", "priceCurrency": "USD", "url": "https://apps.apple.com/app/id6819076774"},
+    {"@type": "Offer", "name": "Moonplace Plus (removes all ads, one-time purchase)", "price": "3.99", "priceCurrency": "USD"}
+  ],
+  "publisher": {"@type": "Organization", "name": "ImaginaDev LLC", "url": "https://imaginadev.com", "email": "support@imaginadev.com"},
+  "author": {"@type": "Organization", "name": "ImaginaDev LLC", "url": "https://imaginadev.com"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What kind of puzzle is Moonplace?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Moonplace is a Star Battle style logic puzzle, the same one-per-row, one-per-column, one-per-region rules with no two pieces touching that some people know from Queens puzzles. In Moonplace you place moons, one in every row, column and colored region, and moons may not touch, not even diagonally."}},
+    {"@type": "Question", "name": "Is Moonplace free?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Moonplace is free on the App Store. Optional short ads give extra hints, and Endless shows an occasional ad between puzzles. No ad ever interrupts a puzzle. Moonplace Plus is a one-time purchase ($3.99 in the US) that removes all ads and works with Family Sharing."}},
+    {"@type": "Question", "name": "Do I need to guess?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. Every Moonplace puzzle has exactly one solution and can be solved by logic alone."}},
+    {"@type": "Question", "name": "Do I need an account?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. Moonplace needs no account or sign-in, and your progress stays on your iPhone. Game Center is optional, for the leaderboards."}}
+  ]
+}
+</script>
 <style>
-  :root { --ink:#1C2A4A; --muted:#4F5A73; --bg:#F7F2E7; --card:#FFFDF8; --line:#E4DBC8; --gold:#9A6F12; }
+  :root { --ink:#1C2A4A; --muted:#4F5A73; --bg:#F7F2E7; --card:#FFFDF8; --line:#E4DBC8; --gold:#9A6F12; --navy:#1C2A4A; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
          font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  main { max-width:880px; margin:0 auto; padding:40px 20px 64px; }
   .brand { font-weight:600; color:var(--gold); text-decoration:none; letter-spacing:0.02em; }
-  h1 { font-family:Georgia, "Times New Roman", serif; font-size:2.2rem; line-height:1.2; margin:24px 0 6px; }
-  h2 { font-size:1.15rem; margin:36px 0 8px; }
-  h3 { font-size:1rem; margin:22px 0 4px; }
-  p, li { color:var(--ink); }
-  .meta { color:var(--muted); margin:0 0 28px; }
+  .hero { display:flex; gap:20px; align-items:center; margin:28px 0 10px; }
+  .hero img { width:84px; height:84px; border-radius:20px; box-shadow:0 6px 18px rgba(60,40,20,.18); flex:none; }
+  h1 { font-family:Georgia, "Times New Roman", serif; font-size:2.4rem; line-height:1.15; margin:0; }
+  .tagline { color:var(--muted); margin:4px 0 0; font-size:1.05rem; }
+  .lead { font-size:1.12rem; max-width:680px; margin:22px 0 22px; }
+  .store { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600;
+           padding:13px 24px; border-radius:999px; }
+  .store:hover { background:#2B3D66; }
+  .facts { color:var(--muted); font-size:0.95rem; margin:12px 0 0; }
+  .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin:36px 0 8px; }
+  .shots figure { margin:0; }
+  .shots img { width:100%; height:auto; border-radius:22px; display:block; box-shadow:0 10px 26px rgba(60,40,20,.16); }
+  .shots figcaption { color:var(--muted); font-size:0.88rem; margin-top:8px; text-align:center; }
+  h2 { font-family:Georgia, "Times New Roman", serif; font-size:1.55rem; margin:48px 0 10px; }
+  h3 { font-size:1.02rem; margin:22px 0 4px; }
+  .grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; }
+  .card h3 { margin:0 0 4px; }
+  .card p { margin:0; }
   .summary { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; }
-  .summary ul { margin:8px 0 0; padding-left:20px; }
   a { color:var(--ink); }
-  footer { margin-top:48px; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  footer { margin-top:56px; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--line); padding-top:18px; }
+  @media (max-width:640px) {
+    h1 { font-size:2rem; }
+    .hero img { width:68px; height:68px; border-radius:16px; }
+    .shots { grid-template-columns:repeat(3, 72%); overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+    .shots figure { scroll-snap-align:start; }
+    .grid { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
 <main>
   <a class="brand" href="https://imaginadev.com">ImaginaDev</a>
-  <h1>Moonplace Support</h1>
-  <p class="meta">A calm daily logic puzzle · ImaginaDev LLC</p>
 
+  <div class="hero">
+    <img src="/studio/icons/moonplace.png" width="84" height="84" alt="Moonplace app icon">
+    <div>
+      <h1>Moonplace</h1>
+      <p class="tagline">A calm daily logic puzzle for iPhone</p>
+    </div>
+  </div>
+
+  <p class="lead">Moonplace is a Star Battle style puzzle game: place one moon in every row, every column and every colored region, with no two moons touching, not even diagonally. A new puzzle every day, hints that explain the logic instead of giving away the answer, and every puzzle solvable by logic alone. Free, with optional ads. Moonplace Plus removes them.</p>
+
+  <a class="store" href="https://apps.apple.com/app/id6819076774">Download on the App Store</a>
+  <p class="facts">Free · iPhone · No account needed · One-time Moonplace Plus, $3.99 in the US</p>
+
+  <div class="shots">
+    <figure><img src="/assets/moonplace-screen-1.webp" width="640" height="1391" alt="A Moonplace daily puzzle: a grid of colored regions with moons and X marks"><figcaption>One moon per row, column and color</figcaption></figure>
+    <figure><img src="/assets/moonplace-screen-2.webp" width="640" height="1391" alt="A Moonplace hint called Locked Line, explaining the next step on the board"><figcaption>Hints that name the technique</figcaption></figure>
+    <figure><img src="/assets/moonplace-screen-3.webp" width="640" height="1391" alt="The Moonplace Observatory, with practice for each solving technique"><figcaption>Practice in the Observatory</figcaption></figure>
+  </div>
+
+  <h2>What you get</h2>
+  <div class="grid">
+    <div class="card"><h3>A daily puzzle for everyone</h3><p>Everyone plays the same Daily, which changes at midnight where you are. Easier boards early in the week, a bigger challenge on Saturday. Keep a streak and earn a free hint token every seventh day.</p></div>
+    <div class="card"><h3>Hints that teach</h3><p>A hint names the technique, like Last Spot, Locked Line or What If, and explains in plain words why the next step works on your board. The first hint in every puzzle is free.</p></div>
+    <div class="card"><h3>Train in the Observatory</h3><p>Puzzles picked for your level and focused practice on the techniques you find hardest. Rise from Stargazer to Master Astronomer.</p></div>
+    <div class="card"><h3>Endless play</h3><p>Four board sizes from 8x8 to 14x14, each with its own personal best. Leave a game anytime and pick it up later.</p></div>
+    <div class="card"><h3>Race to the Moon</h3><p>Every solve earns stardust. Climb the daily Game Center leaderboard and compare Daily times with friends. Game Center is optional.</p></div>
+    <div class="card"><h3>Made with care</h3><p>Gentle sounds and haptics, full VoiceOver and Dynamic Type support. No account needed, and your progress stays on your iPhone.</p></div>
+  </div>
+
+  <h2>Is Moonplace for you?</h2>
+  <h3>What kind of puzzle is it?</h3>
+  <p>Moonplace is a Star Battle style logic puzzle, the same one-per-row, one-per-column, one-per-region rules with no two pieces touching that some people know from Queens puzzles. Here you place moons on soft colored regions.</p>
+  <h3>Who is it for?</h3>
+  <p>Adults and teens who enjoy calm brain games, Sudoku or nonograms and want a short, relaxing daily habit. Beginners can start with the tutorial and the gentler early-week puzzles; experienced solvers can go up to 14x14 boards.</p>
+  <h3>Do I need to guess?</h3>
+  <p>Never. Every puzzle has exactly one solution and can be solved by logic alone.</p>
+  <h3>What does it cost?</h3>
+  <p>Moonplace is free. You can choose to watch a short ad for an extra hint, and Endless shows an occasional ad between puzzles. No ad ever interrupts a puzzle. Moonplace Plus is a one-time purchase ($3.99 in the US) that removes all ads for good and works with Family Sharing.</p>
+
+  <h2>Help and support</h2>
   <div class="summary">
     <strong>Need help?</strong>
     <p style="margin:6px 0 0">Email <a href="mailto:support@imaginadev.com">support@imaginadev.com</a>. Tell us your iPhone model and iOS version if something isn't working.</p>
   </div>
 
-  <h2>Common questions</h2>
   <h3>How do I play?</h3>
-  <p>Place moons so that every row, every column and every colored region has exactly one moon, and no two moons touch, not even diagonally. Tap a tile to mark an X, tap it twice to place a moon. Every puzzle has one solution and can be solved by logic alone. You can replay the tutorial from Settings, How to play.</p>
+  <p>Place moons so that every row, every column and every colored region has exactly one moon, and no two moons touch, not even diagonally. Tap a tile to mark an X, tap it twice to place a moon. You can replay the tutorial from Settings, How to play.</p>
   <h3>When does the Daily change?</h3>
   <p>At midnight in your own time zone. Everyone gets the same puzzle on the same date.</p>
   <h3>How do hints work?</h3>
@@ -51,7 +162,7 @@
   <h2>Privacy</h2>
   <p>Read the full <a href="/moonplace/privacy">privacy policy</a>.</p>
 
-  <footer>© 2026 ImaginaDev LLC · <a href="https://imaginadev.com">imaginadev.com</a></footer>
+  <footer>Moonplace is made by ImaginaDev LLC, makers of calm daily puzzle games. See <a href="https://imaginadev.com/#apps">our other apps</a>. © 2026 ImaginaDev LLC</footer>
 </main>
 </body>
 </html>
